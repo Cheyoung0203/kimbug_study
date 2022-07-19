@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../HTML_Practice(CSS)/Breadcrumb_&_Pagination.css"
+    />
+    <title>Breadcrumb &amp; Pagination</title>
+  </head>
+  <body>
+    <!-- breadcrumb -->
+    <div class="breadcrumb">
+      <!-- Breadcrumb -->
+      <a href="https://github.com/rohjs" aria-label="Go to rohjs profile page"
+        >rohjs</a
+      >
+      <a
+        href="https://github.com/rohjs/bugless-101"
+        aria-label="Go to bugless-101 repogitory page"
+        >bugless-101</a
+      >
+    </div>
+
+    <!-- WAI-ARIA(Accessible Rich Internet Applications, ARIA):
+        1. 인터넷을 사용하는 사람들이 좀 더 쉽게 접근할 수 있게 도와주는 장치
+
+        2.  장애를 가진 사용자가 웹 콘텐츠와 웹 어플리케이션(특히 JavaScript를 사용하여 개발한 경우)에 더 쉽게 접근할 수 있는 방법을 정의하는 여러 특성 -->
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <a href="#" aria-label="Go to the previous page" class="disabled"
+        >Previous</a
+      >
+      <!-- a 태그는 disabled attribute 처리를 할 수 없다. 때문에 css로 처리해야 한다! -->
+      <ol>
+        <li class="current-page">
+          <a href="#" aria-label="Current page. Go to page 1">1</a>
+        </li>
+        <li><a href="#" aria-label="Go to page 2">2</a></li>
+        <li><a href="#" aria-label="Go to page 3">3</a></li>
+        <li><a href="#" aria-label="Go to page 4">4</a></li>
+        <li><a href="#" aria-label="Go to page 5">5</a></li>
+        <li><button type="button" disabled>...</button></li>
+        <li><a href="#" aria-label="Go to page 6">6</a></li>
+        <li><a href="#" aria-label="Go to page 7">7</a></li>
+        <li><a href="#" aria-label="Go to page 8">8</a></li>
+        <li><a href="#" aria-label="Go to page 9">9</a></li>
+      </ol>
+      <a href="#" aria-label="Go to the next page">Next</a>
+    </div>
+  </body>
+</html>
